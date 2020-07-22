@@ -1,0 +1,15 @@
+.icon {
+    flex: 1;
+    max-width: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.sidebarheader {
+    display: flex;
+}
+
+.title {
+    flex: 1;
+    font-size: large;
+}
