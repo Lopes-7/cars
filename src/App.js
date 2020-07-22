@@ -1,19 +1,30 @@
-import React, { Component } from 'react';
-import './App.css';
+/**
+ * IMPORTS
+ */
+import React from 'react';
+import {Sidebar} from './components/sidebar';
+
+
+/**
+ * STYLE
+ */
 import '@blueprintjs/core/lib/css/blueprint.css';
 import 'normalize.css';
+import './App.css';
 
 
-class App extends Component {
-  render() {
-  const version = React.version
-
+/**
+ * CODE
+ */
+function App() { 
     return (
       <div className="App">
-          <h2>Welcome to React {version}</h2>
+          <Sidebar></Sidebar>
       </div>
     );
-  }
 }
 
+/**
+ * EXPORTS
+ */
 export default App;
