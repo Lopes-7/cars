@@ -1,0 +1,28 @@
+.age {
+    min-width: 20%;
+}
+
+.brand {
+    flex: 1;
+    min-width: 25%;
+}
+
+.price {
+    flex: 1;
+    min-width: 25%;
+}
+
+.row {
+    background: white;
+    border-bottom: solid;
+    border-color: rgb(135,153,166);
+    border-width: 1px;
+    color: rgb(53, 52, 52);
+    display: flex;
+    padding-left: 15px;
+}
+
+.title {
+    flex: 1;
+    min-width: 30%;
+}
