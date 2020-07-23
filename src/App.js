@@ -2,6 +2,7 @@
  * IMPORTS
  */
 import React from 'react';
+import {Display} from './components/display';
 import {Sidebar} from './components/sidebar';
 
 
@@ -20,6 +21,7 @@ function App() {
     return (
       <div className="App">
           <Sidebar></Sidebar>
+          <Display></Display>
       </div>
     );
 }
