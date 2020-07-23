@@ -1,0 +1,27 @@
+
+.header {
+    font-size: 18px;
+    border-bottom: solid;
+    border-top: solid;
+    color: rgb(57,75,89);
+    display: flex;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.headerage {
+    min-width: 25%;
+}
+
+.headerbrand {
+    min-width: 25%;
+}
+
+.headerprice {
+    min-width: 25%;
+}
+
+.headertitle {
+    width: 25%;
+}
