@@ -1,0 +1,15 @@
+.content {
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.display {
+    background-color: rgb(236,241,245);
+    flex: 1;
+    max-width: 80%;
+    min-height: 20vh;
+}
+
+.spin {
+    margin-top: 30%;
+}
