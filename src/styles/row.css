@@ -1,13 +1,34 @@
-.age {
+.age-row {
     min-width: 20%;
 }
 
-.brand {
+.brand-row {
     flex: 1;
     min-width: 25%;
 }
 
-.price {
+.bp3-button-group.bp3-minimal {
+    background-color: rgb(48,64,77);
+    color:white;
+}
+
+.bp3-dialog.bp3-alert.deletealert {
+    background-color: rgb(48,64,77);
+    color: white;
+}
+
+.bp3-toast-message {
+    background-color: rgb(48,64,77);
+    color:white;
+}
+
+
+.car-row {
+    flex: 1;
+    max-width: 30%;
+}
+
+.price-row {
     flex: 1;
     min-width: 25%;
 }
@@ -20,9 +41,6 @@
     color: rgb(53, 52, 52);
     display: flex;
     padding-left: 15px;
+    padding-top: 5px;
 }
 
-.title {
-    flex: 1;
-    min-width: 30%;
-}
