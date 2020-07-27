@@ -41,14 +41,18 @@ function Display() {
     // component search value state
     const [searchValue, setSearchValue] = useState('');
 
-    
+    // instance of abort controller
+    const controller = new window.AbortController();
+
     // fetch data from API when component is mounted and when refresh flag is set
     useEffect(() => {
         // set is fetching flag to show spinner
         setIsFetching(true);
         
         // API call
-        fetch(url, {method: 'get', headers: {'Accept': 'application/json'}})
+        fetch(url, {method: 'get',
+                    headers: {'Accept': 'application/json'},
+                    signal: controller.signal})
         .then(res => res.json())
         .then(res => {
             setData(res);
@@ -58,6 +62,11 @@ function Display() {
         
         // turn off refresh flag
         setRefresh(false);
+
+        // clean up function
+        return function cleanUp() {
+            controller.abort();
+        };
     }, [refresh]);
 
     // verifying which data should be rendered
