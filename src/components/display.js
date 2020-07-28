@@ -29,6 +29,9 @@ function Display() {
     // component data state
     const [data, setData] = useState(null);
 
+    // component display data by state
+    const [displayBy, setDisplayBy] = useState('title');
+
     // component fetching data state
     const [isFetching, setIsFetching] = useState(false);
     
@@ -83,12 +86,31 @@ function Display() {
             }
         }
     
+    // order data according to display by state
+    switch(displayBy) {
+        case 'title':
+            selectedRows.sort((a,b) => {return a.title.localeCompare(b.title)})
+            break
+        
+        case 'brand':
+            selectedRows.sort((a,b) => {return a.brand.localeCompare(b.brand)})
+            break
+        
+        case 'price':
+            selectedRows.sort((a,b) => {return Number(a.price) - Number(b.price)})
+            break
+    
+        case 'age':
+            selectedRows.sort((a,b) => {return a.age - b.age})
+            break
+    }
+
     return (
         <div className="display">
             {/* passing set search value function to child component */}
             <SearchBar dispatch={setSearchValue} refresh={setRefresh}></SearchBar>
             
-            <DisplayHeader></DisplayHeader>
+            <DisplayHeader setDisplayBy={setDisplayBy}></DisplayHeader>
             
             <div className="content">
                 {/* render a spinner when fetching data */}

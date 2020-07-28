@@ -11,17 +11,21 @@
 }
 
 .headerage {
+    cursor: pointer;
     min-width: 25%;
 }
 
 .headerbrand {
+    cursor: pointer;
     min-width: 25%;
 }
 
 .headerprice {
+    cursor: pointer;
     min-width: 25%;
 }
 
 .headertitle {
+    cursor: pointer;
     width: 25%;
 }
