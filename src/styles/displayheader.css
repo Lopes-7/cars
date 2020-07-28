@@ -1,0 +1,31 @@
+
+.header {
+    font-size: 18px;
+    border-bottom: solid;
+    border-top: solid;
+    color: rgb(57,75,89);
+    display: flex;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.headerage {
+    cursor: pointer;
+    min-width: 25%;
+}
+
+.headerbrand {
+    cursor: pointer;
+    min-width: 25%;
+}
+
+.headerprice {
+    cursor: pointer;
+    min-width: 25%;
+}
+
+.headertitle {
+    cursor: pointer;
+    width: 25%;
+}

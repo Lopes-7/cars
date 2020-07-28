@@ -1,0 +1,7 @@
+.sidebar {
+    background: rgb(48,64,77);
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    width: 20%;
+}
