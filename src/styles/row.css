@@ -17,6 +17,11 @@
     color: white;
 }
 
+.bp3-dialog.editdialog {
+    background-color: rgb(48,64,77);
+    color: white;
+}
+
 .bp3-toast-message {
     background-color: rgb(48,64,77);
     color:white;
